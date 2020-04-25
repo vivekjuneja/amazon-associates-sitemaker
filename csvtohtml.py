@@ -63,8 +63,6 @@ def generate_html(file):
 
 
 def convert_spreadsheet2csv(spreadsheet_uri):
-	#Input: https://docs.google.com/spreadsheets/d/1ENjza7vcrSkiipcY_Mrx-0LLMcsXO7VbotaIL0jJvTE/edit#gid=37684246
-	#Output: https://docs.google.com/spreadsheets/d/1ENjza7vcrSkiipcY_Mrx-0LLMcsXO7VbotaIL0jJvTE/export?gid=37684246&exportFormat=csv
 	spreadsheet_uri = spreadsheet_uri.replace("edit#", "export?") + "&exportFormat=csv"
 	return spreadsheet_uri
 
